@@ -17,8 +17,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 transition-all">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo("home")}>
-          <img src={logo} alt="LeadNorth Consulting" className="h-16 w-auto" />
-          <span className="font-display text-xl font-bold text-foreground hidden sm:inline">
+          <img src={logo} alt="LeadNorth Consulting" className="h-20 w-auto" />
+          <span className="font-display text-2xl font-bold text-foreground">
             LeadNorth <span className="text-primary">Consulting</span>
           </span>
         </div>
