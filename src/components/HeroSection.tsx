@@ -6,7 +6,7 @@ const HeroSection = () => {
       <img
         src={heroImg}
         alt="LeadNorth Consulting - Transform How You Lead"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-top"
         loading="eager"
       />
       <div className="hero-overlay absolute inset-0" />
