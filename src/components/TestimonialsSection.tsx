@@ -2,19 +2,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
-    role: "VP of Operations, TechCorp",
-    quote: "Working with Elevate Coaching transformed my leadership style. I went from managing tasks to inspiring teams. The results speak for themselves — our team productivity increased by 40%.",
+    name: "Senior Leadership Team",
+    role: "Global Technology Firm",
+    quote: "Working with LeadNorth transformed how our leadership team operates. We moved from reactive decision-making to intentional, values-driven leadership. The shift was profound and lasting.",
   },
   {
-    name: "James Rodriguez",
-    role: "Founder & CEO, GreenPath",
-    quote: "The career transition coaching gave me the clarity and confidence I needed to launch my own company. I couldn't have done it without this incredible guidance and support.",
+    name: "Programme Participant",
+    role: "Career Transition Coaching",
+    quote: "Vandana's coaching gave me the clarity to see the patterns driving my decisions. For the first time, I felt genuinely in control of my career direction — not just responding to what came at me.",
   },
   {
-    name: "Emily Chen",
-    role: "Director of HR, Innovate Inc.",
-    quote: "The team coaching sessions were a game-changer for our organization. Communication improved, conflicts reduced, and we finally started working as a truly cohesive unit.",
+    name: "HR Director",
+    role: "Financial Services Organisation",
+    quote: "The mind shift approach is unlike any development programme we've used before. It created real, sustainable change in how our managers lead — not just new techniques, but a fundamentally different way of thinking.",
   },
 ];
 
@@ -23,10 +23,10 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-4">
-          Client <span className="text-gradient-gold">Testimonials</span>
+          What Leaders <span className="text-gradient-gold">Say</span>
         </h2>
         <p className="text-muted-foreground text-center mb-14 max-w-xl mx-auto">
-          Hear from leaders who have transformed their careers and lives.
+          Hear from leaders who have experienced the shift from reaction to intentional leadership.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

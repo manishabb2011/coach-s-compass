@@ -12,39 +12,39 @@ import cardStrategy from "@/assets/card-strategy.jpg";
 const services = [
   {
     image: cardExecutive,
-    title: "Executive Coaching",
-    description: "Personalized 1-on-1 sessions for senior leaders seeking peak performance.",
-    tooltip: "Our executive coaching program helps C-suite leaders and senior managers develop strategic thinking, emotional intelligence, and decisive leadership skills through tailored sessions.",
+    title: "Mind Shift Coaching",
+    description: "Uncover what's beneath your habits and develop clarity of thought for intentional leadership.",
+    tooltip: "Our signature coaching approach helps leaders notice the mental and emotional patterns that influence their choices, enabling them to respond with awareness and responsibility rather than react automatically.",
   },
   {
     image: cardLeadership,
     title: "Leadership Development",
-    description: "Build confident, inspiring leaders at every level of your organization.",
-    tooltip: "A comprehensive program combining workshops, assessments, and ongoing mentorship to cultivate next-generation leaders who drive results and inspire teams.",
+    description: "Build confident, self-aware leaders who navigate complexity with purpose.",
+    tooltip: "A transformational program that goes beyond skills and techniques — developing the mindset and awareness needed to pause, reflect, and choose intentionally at every level of leadership.",
   },
   {
     image: cardCareer,
     title: "Career Transition",
-    description: "Navigate career changes with clarity, confidence, and a strategic plan.",
-    tooltip: "Whether you're pivoting industries or climbing the ladder, our career transition coaching provides clarity, actionable strategies, and the confidence to make bold moves.",
+    description: "Navigate career changes with clarity, confidence, and intentional direction.",
+    tooltip: "Whether you're a university student, early in your career, or pivoting roles — we help you notice the patterns shaping your decisions so you can move forward with purpose and self-trust.",
   },
   {
     image: cardTeam,
     title: "Team Coaching",
-    description: "Strengthen collaboration, communication, and team dynamics.",
-    tooltip: "Unlock your team's potential through facilitated sessions that improve trust, resolve conflicts, and align everyone around shared goals for maximum impact.",
+    description: "Foster collaboration, trust, and conscious communication within teams.",
+    tooltip: "We work with teams to build trust, resolve conflicts, and create alignment — helping every member operate from purpose and conscious choice rather than habitual reaction.",
   },
   {
     image: cardWellness,
-    title: "Wellness & Balance",
-    description: "Achieve sustainable success without sacrificing your well-being.",
-    tooltip: "Integrating mindfulness, stress management, and work-life integration strategies so you can perform at your best while maintaining health and happiness.",
+    title: "Executive Presence",
+    description: "Cultivate the ability to act with awareness, presence, and responsibility.",
+    tooltip: "Develop the presence that makes clarity and choice possible — learning to step back from immediate demands and create space to think, feel, and decide with confidence.",
   },
   {
     image: cardStrategy,
-    title: "Business Strategy",
-    description: "Clarify your vision and build a roadmap for sustainable growth.",
-    tooltip: "Partner with an experienced strategist to define your business vision, set measurable goals, and create an actionable roadmap that drives sustainable, scalable growth.",
+    title: "Organisational Consulting",
+    description: "Create lasting, transformational change across your organisation — from the inside out.",
+    tooltip: "We partner with organisations to create meaningful shifts in thinking at every level, enabling clearer decisions, purposeful leadership, and growth with intention.",
   },
 ];
 
@@ -71,10 +71,10 @@ const ServicesCarousel = () => {
     <section id="services" className="py-24 bg-gradient-navy">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-4">
-          Our <span className="text-gradient-gold">Services</span>
+          How We <span className="text-gradient-gold">Work</span>
         </h2>
         <p className="text-muted-foreground text-center mb-14 max-w-xl mx-auto">
-          Tailored coaching solutions designed to meet you where you are and take you where you want to go.
+          Grounded in mind shift-driven coaching — creating space for insight, reflection, and transformation.
         </p>
 
         <div className="relative">

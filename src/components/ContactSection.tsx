@@ -17,7 +17,7 @@ const ContactSection = () => {
           Get in <span className="text-gradient-gold">Touch</span>
         </h2>
         <p className="text-muted-foreground text-center mb-14">
-          Ready to start your transformation? Let's talk.
+          Ready to move from reaction to clarity? Let's start the conversation.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -54,7 +54,7 @@ const ContactSection = () => {
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               className="w-full bg-card border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all resize-none"
-              placeholder="Tell us about your goals..."
+              placeholder="Tell us about your leadership goals..."
             />
           </div>
           <button
