@@ -56,8 +56,8 @@ export default {
           medium: "hsl(var(--navy-medium))",
         },
         gold: {
-          light: "hsl(var(--gold-light))",
-          glow: "hsl(var(--gold-glow))",
+          light: "hsl(var(--teal-light))",
+          glow: "hsl(var(--teal-glow))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
