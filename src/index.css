@@ -6,49 +6,49 @@
 
 @layer base {
   :root {
-    --background: 220 30% 8%;
+    --background: 210 30% 8%;
     --foreground: 210 40% 95%;
 
-    --card: 220 28% 12%;
+    --card: 210 28% 12%;
     --card-foreground: 210 40% 95%;
 
-    --popover: 220 28% 12%;
+    --popover: 210 28% 12%;
     --popover-foreground: 210 40% 95%;
 
-    --primary: 40 85% 55%;
-    --primary-foreground: 220 30% 8%;
+    --primary: 175 65% 45%;
+    --primary-foreground: 210 30% 8%;
 
-    --secondary: 215 50% 18%;
+    --secondary: 200 50% 18%;
     --secondary-foreground: 210 40% 95%;
 
-    --muted: 220 25% 16%;
-    --muted-foreground: 215 15% 60%;
+    --muted: 210 25% 16%;
+    --muted-foreground: 200 15% 60%;
 
-    --accent: 40 85% 55%;
-    --accent-foreground: 220 30% 8%;
+    --accent: 175 65% 45%;
+    --accent-foreground: 210 30% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 25% 20%;
-    --input: 215 25% 20%;
-    --ring: 40 85% 55%;
+    --border: 200 25% 20%;
+    --input: 200 25% 20%;
+    --ring: 175 65% 45%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 220 30% 6%;
+    --sidebar-background: 210 30% 6%;
     --sidebar-foreground: 210 40% 95%;
-    --sidebar-primary: 40 85% 55%;
-    --sidebar-primary-foreground: 220 30% 8%;
-    --sidebar-accent: 215 50% 18%;
+    --sidebar-primary: 175 65% 45%;
+    --sidebar-primary-foreground: 210 30% 8%;
+    --sidebar-accent: 200 50% 18%;
     --sidebar-accent-foreground: 210 40% 95%;
-    --sidebar-border: 215 25% 20%;
-    --sidebar-ring: 40 85% 55%;
+    --sidebar-border: 200 25% 20%;
+    --sidebar-ring: 175 65% 45%;
 
-    --navy-deep: 220 35% 5%;
-    --navy-medium: 220 30% 14%;
-    --gold-light: 40 90% 70%;
-    --gold-glow: 40 100% 50%;
+    --navy-deep: 210 35% 5%;
+    --navy-medium: 210 30% 14%;
+    --teal-light: 175 70% 65%;
+    --teal-glow: 170 80% 40%;
   }
 }
 
@@ -69,22 +69,22 @@
 @layer utilities {
   .text-gradient-gold {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(40 90% 70%), hsl(40 85% 55%), hsl(40 100% 50%));
+    background-image: linear-gradient(135deg, hsl(175 70% 65%), hsl(175 65% 45%), hsl(170 80% 40%));
   }
 
   .bg-gradient-navy {
-    background: linear-gradient(180deg, hsl(220 35% 5%), hsl(220 30% 14%));
+    background: linear-gradient(180deg, hsl(210 35% 5%), hsl(210 30% 14%));
   }
 
   .bg-gradient-card {
-    background: linear-gradient(145deg, hsl(220 28% 14%), hsl(220 28% 10%));
+    background: linear-gradient(145deg, hsl(210 28% 14%), hsl(210 28% 10%));
   }
 
   .gold-border-glow {
-    box-shadow: 0 0 20px hsl(40 100% 50% / 0.15), inset 0 1px 0 hsl(40 90% 70% / 0.1);
+    box-shadow: 0 0 20px hsl(175 65% 45% / 0.15), inset 0 1px 0 hsl(175 70% 65% / 0.1);
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, hsl(220 35% 5% / 0.3) 0%, hsl(220 35% 5% / 0.6) 50%, hsl(220 35% 5% / 0.95) 100%);
+    background: linear-gradient(180deg, hsl(210 35% 5% / 0.3) 0%, hsl(210 35% 5% / 0.6) 50%, hsl(210 35% 5% / 0.95) 100%);
   }
 }
