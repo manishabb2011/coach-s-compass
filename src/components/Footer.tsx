@@ -3,11 +3,11 @@ import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-navy-deep border-t border-border">
+    <footer className="py-4 bg-navy-deep border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="LeadNorth Consulting" className="h-14 w-auto mix-blend-screen" />
+            <img src={logo} alt="LeadNorth Consulting" className="h-10 w-auto mix-blend-screen" />
             <div>
               <span className="font-display text-lg font-bold text-foreground">LeadNorth Consulting</span>
               <p className="text-muted-foreground text-sm">
