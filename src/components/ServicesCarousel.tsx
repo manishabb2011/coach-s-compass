@@ -38,7 +38,7 @@ const services = [
     image: cardWellness,
     title: "Leadership Circle® Individual Profile",
     description: "For senior leaders, executives and directors seeking deeper insight into their leadership patterns and impact.",
-    tooltip: "Uncover the deep patterns driving your leadership style. Gain a comprehensive view of your effectiveness through the Leadership Circle assessment and expert debrief.",
+    tooltip: "Reveal the underlying patterns shaping your leadership. The Leadership Circle Profile® offers a clear snapshot of how your behaviours and mindset either strengthen or limit your impact, followed by an expert debrief to turn insight into intentional action.",
   },
   {
     image: cardStrategy,
