@@ -44,7 +44,7 @@ const services = [
     image: cardStrategy,
     title: "Collective Leadership Assessment (CLA) for Teams ",
     description: "For leadership teams in organisations with 50+ employees looking to improve alignment, collaboration and collective effectiveness.",
-    tooltip: "Break down silos and fix culture drift. This assessment aligns your leadership team, improving collective effectiveness through Assessment and coaching sessions. The CLA is a robust view of where employees view current collective leadership effectiveness compared to the desired collective effectiveness. The “gap” in collective effectiveness, between current and desired, instantly reveals opportunities for development, targeted workshops and a roadmap for integration.",
+    tooltip: "Break down silos and fix culture drift by aligning your leadership team. This assessment provides a robust view of your current versus desired collective effectiveness, instantly revealing the "gap" and providing a clear roadmap for development and integration through targeted coaching.",
   },
 ];
 
