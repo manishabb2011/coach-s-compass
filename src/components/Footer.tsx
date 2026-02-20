@@ -1,5 +1,5 @@
 import { Linkedin, Twitter, Instagram, Mail } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpeg";
 
 const Footer = () => {
   return (
