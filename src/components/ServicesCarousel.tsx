@@ -1,12 +1,13 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 import cardExecutive from "@/assets/card-executive.jpg";
 import cardLeadership from "@/assets/card-leadership.jpg";
 import cardCareer from "@/assets/card-career.jpg";
 import cardTeam from "@/assets/card-team.jpg";
-import cardWellness from "@/assets/card-wellness.jpg";
+import cardWellness from "@/assets/card-wellness.jpeg";
 import cardStrategy from "@/assets/card-strategy.jpg";
 
 const services = [
@@ -44,7 +45,7 @@ const services = [
     image: cardStrategy,
     title: "Collective Leadership Assessment (CLA) for Teams ",
     description: "For leadership teams in organisations with 50+ employees looking to improve alignment, collaboration and collective effectiveness.",
-    tooltip: "Break down silos and fix culture drift by aligning your leadership team. This assessment provides a robust view of your current versus desired collective effectiveness, instantly revealing the "gap" and providing a clear roadmap for development and integration through targeted coaching.",
+    tooltip: `Break down silos and fix culture drift by aligning your leadership team. This assessment provides a robust view of your current versus desired collective effectiveness, instantly revealing the "gap" and providing a clear roadmap for development and integration through targeted coaching.`,
   },
 ];
 
@@ -52,6 +53,18 @@ const ServicesCarousel = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [openPopupIndex, setOpenPopupIndex] = useState<number | null>(null);
+  const isMobile = useIsMobile();
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpenPopupIndex(null);
+    };
+    if (openPopupIndex !== null) {
+      document.addEventListener("keydown", handleEscape);
+      return () => document.removeEventListener("keydown", handleEscape);
+    }
+  }, [openPopupIndex]);
 
   const checkScroll = () => {
     if (!scrollRef.current) return;
@@ -82,7 +95,7 @@ for insight, pattern awareness, and intentional transformation.
           {canScrollLeft && (
             <button
               onClick={() => scroll("left")}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-secondary/80 backdrop-blur-sm p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-secondary/80 backdrop-blur-sm p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <ChevronLeft size={24} />
             </button>
@@ -90,7 +103,7 @@ for insight, pattern awareness, and intentional transformation.
           {canScrollRight && (
             <button
               onClick={() => scroll("right")}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-secondary/80 backdrop-blur-sm p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-secondary/80 backdrop-blur-sm p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <ChevronRight size={24} />
             </button>
@@ -99,33 +112,70 @@ for insight, pattern awareness, and intentional transformation.
           <div
             ref={scrollRef}
             onScroll={checkScroll}
-            className="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4 px-2"
+            className="flex flex-col gap-6 md:flex-row md:overflow-x-auto md:scrollbar-hide md:snap-x md:snap-mandatory md:pb-4 md:px-2"
             style={{ scrollbarWidth: "none" }}
           >
-            {services.map((s, i) => (
-              <Tooltip key={i}>
-                <TooltipTrigger asChild>
-                  <div className="min-w-[300px] max-w-[300px] snap-start bg-gradient-card rounded-xl overflow-hidden border border-border hover:border-primary/40 transition-all duration-300 hover:gold-border-glow group cursor-pointer flex-shrink-0">
-                    <div className="h-48 overflow-hidden">
-                      <img
-                        src={s.image}
-                        alt={s.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-lg font-display font-semibold mb-2 text-foreground">{s.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
-                    </div>
+            {services.map((s, i) => {
+              const card = (
+                <div
+                  key={i}
+                  className="w-full md:min-w-[300px] md:max-w-[300px] md:snap-start bg-gradient-card rounded-xl overflow-hidden border border-border hover:border-primary/40 transition-all duration-300 hover:gold-border-glow group cursor-pointer flex-shrink-0"
+                  onClick={isMobile ? () => setOpenPopupIndex(i) : undefined}
+                  role={isMobile ? "button" : undefined}
+                  tabIndex={isMobile ? 0 : undefined}
+                  onKeyDown={isMobile ? (e) => e.key === "Enter" && setOpenPopupIndex(i) : undefined}
+                >
+                  <div className="h-48 overflow-hidden">
+                    <img
+                      src={s.image}
+                      alt={s.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
                   </div>
-                </TooltipTrigger>
-                <TooltipContent side="bottom" className="max-w-xs bg-secondary text-secondary-foreground border-border p-4">
-                  <p className="text-sm leading-relaxed">{s.tooltip}</p>
-                </TooltipContent>
-              </Tooltip>
-            ))}
+                  <div className="p-6">
+                    <h3 className="text-lg font-display font-semibold mb-2 text-foreground">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+                  </div>
+                </div>
+              );
+              if (isMobile) {
+                return card;
+              }
+              return (
+                <Tooltip key={i}>
+                  <TooltipTrigger asChild>{card}</TooltipTrigger>
+                  <TooltipContent side="bottom" className="max-w-xs bg-secondary text-secondary-foreground border-border p-4">
+                    <p className="text-sm leading-relaxed">{s.tooltip}</p>
+                  </TooltipContent>
+                </Tooltip>
+              );
+            })}
           </div>
+
+          {isMobile && openPopupIndex !== null && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 animate-in fade-in-0"
+              onClick={() => setOpenPopupIndex(null)}
+              role="button"
+              tabIndex={0}
+              aria-label="Close"
+              onKeyDown={(e) => e.key === "Escape" && setOpenPopupIndex(null)}
+            >
+              <div
+                className="max-w-sm w-full bg-secondary text-secondary-foreground border border-border rounded-lg p-5 shadow-lg animate-in zoom-in-95 fade-in-0"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                  {services[openPopupIndex].title}
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {services[openPopupIndex].tooltip}
+                </p>
+                <p className="mt-3 text-xs text-muted-foreground">Tap outside to close</p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ const AboutSection = () => {
               <h3 className="text-xl font-display font-semibold text-primary mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">
                 We see a world where leaders and organisations operate from purpose, clarity, and conscious choice.
-                Our focus is on mind shift — transforming thinking patterns so leaders can respond intentionally
+                Our focus is on leadership reorientation, transforming thinking patterns so leaders can respond intentionally
                 rather than react automatically.
               </p>
             </div>
@@ -44,19 +44,15 @@ const AboutSection = () => {
               Meet <span className="text-gradient-gold">Vandana Sharma</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-              Vandana is the founder of LeadNorth Consulting and a passionate advocate for awareness-driven leadership.
-              With a background in strategic talent partnering and leadership coaching, she brings a rare combination
-              of organisational insight and deep coaching expertise to her work.
+            Vandana is a passionate advocate for clarity-led, reflective leadership. With over a decade of experience across HR, strategic talent partnering, and organisational transition, she brings a rare combination of organisational insight and deep coaching expertise to her work.
+            She spent years working closely with leaders, managers, and teams during periods of significant change, including organisational wind-downs and outplacement, supporting professionals through redundancy, role transitions, and high-pressure decision-making. It was this work that revealed a clear pattern: the leaders who navigated complexity best weren't the most skilled or experienced; they were the most self-aware.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-              She spent years working closely with leaders, managers, and teams during periods of significant change —
-              supporting individuals through transition, holding space for reflection under pressure, and building
-              trusted relationships with leadership teams at every level.
+            She holds a Professional Diploma in Individual, Executive, and Business Coaching and is a certified Leadership Circle Profile (LCP) and Collective Leadership Assessment (CLA) Practitioner. She integrates structured assessments with reflective coaching to help clients notice patterns, build self-trust, and align their leadership with their values and long-term direction.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-              Today, Vandana works with professionals at all levels to help them notice the patterns driving their decisions,
-              pause and respond intentionally under pressure, and strengthen self-trust and ownership in action.
-              Her approach isn't about giving advice — it's about creating space for clarity and insight.
+            Her approach is calm, structured, and insight-driven. It's about creating space for clarity and insight, enabling leaders to make decisions that align with their values, purpose, and goals. Confidence, productivity, and stronger decisions follow naturally from that shift.
+            Vandana works with emerging leaders, professionals in transition, and global clients seeking thoughtful, grounded leadership development.
             </p>
           </div>
         </div>

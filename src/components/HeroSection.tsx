@@ -6,7 +6,7 @@ const HeroSection = () => {
       <img
         src={heroImg}
         alt="LeadNorth Consulting - Transform How You Lead"
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        className="hero-img absolute inset-0 w-full h-full object-cover object-top"
         loading="eager"
       />
       <div className="hero-overlay absolute inset-0" />
@@ -18,12 +18,20 @@ const HeroSection = () => {
           We help leaders, teams, and organisations move from reaction to clarity,
           and from autopilot to intentional leadership.
         </p>
-        <a
-          href="#services"
-          className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:bg-gold-glow transition-colors"
-        >
-          Explore Our Approach
-        </a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="#services"
+            className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:bg-gold-glow transition-colors"
+          >
+            Explore Our Approach
+          </a>
+          <a
+            href="#contact"
+            className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:bg-gold-glow transition-colors"
+          >
+            Book a Discovery Call
+          </a>
+        </div>
       </div>
     </section>
   );
