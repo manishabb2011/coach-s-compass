@@ -12,24 +12,6 @@ import cardStrategy from "@/assets/card-strategy.jpg";
 
 const services = [
   {
-    image: cardExecutive,
-    title: "Career Coaching",
-    description: "For undergraduate, postgraduate and final-year students seeking clarity in choosing their career direction and next steps.",
-    tooltip: "Get clarity on your career path. We help you move past decision paralysis by mapping your strengths and building a concrete action plan for your next steps.",
-  },
-  {
-    image: cardLeadership,
-    title: "Career Transition Program",
-    description: "For professionals navigating redundancy, career shifts, or major professional change who need structured clarity and direction.",
-    tooltip: "Navigate redundancy or career shifts with confidence. This program provides a structured audit of your skills and a strategy to reposition yourself for your next big role.",
-  },
-  {
-    image: cardCareer,
-    title: "Leadership Support Coaching (On Demand)",
-    description: "For professionals facing urgent team challenges or difficult decisions who need immediate, structured guidance.",
-    tooltip: "Fast-track your way through a leadership crisis or a tough decision. A high-impact, 45-minute session designed to give you immediate clarity and a summary of your best move.",
-  },
-  {
     image: cardTeam,
     title: "Leadership Clarity Program",
     description: "For first-time and mid-level managers in growing organisations who want to strengthen their leadership capability and improve team performance.",
@@ -41,6 +23,24 @@ const services = [
     description: "For senior leaders, executives and directors seeking deeper insight into their leadership patterns and impact.",
     tooltip: "Reveal the underlying patterns shaping your leadership. The Leadership Circle Profile® offers a clear snapshot of how your behaviours and mindset either strengthen or limit your impact, followed by an expert debrief to turn insight into intentional action.",
   },
+  {
+    image: cardLeadership,
+    title: "Career Transition Program",
+    description: "For professionals navigating redundancy, career shifts, or major professional change who need structured clarity and direction.",
+    tooltip: "Navigate redundancy or career shifts with confidence. This program provides a structured audit of your skills and a strategy to reposition yourself for your next big role.",
+  },
+  {
+    image: cardExecutive,
+    title: "Career Coaching",
+    description: "For undergraduate, postgraduate and final-year students seeking clarity in choosing their career direction and next steps.",
+    tooltip: "Get clarity on your career path. We help you move past decision paralysis by mapping your strengths and building a concrete action plan for your next steps.",
+  },  
+  {
+    image: cardCareer,
+    title: "Leadership Support Coaching (On Demand)",
+    description: "For professionals facing urgent team challenges or difficult decisions who need immediate, structured guidance.",
+    tooltip: "Fast-track your way through a leadership crisis or a tough decision. A high-impact, 45-minute session designed to give you immediate clarity and a summary of your best move.",
+  },  
   {
     image: cardStrategy,
     title: "Collective Leadership Assessment (CLA) for Teams ",
