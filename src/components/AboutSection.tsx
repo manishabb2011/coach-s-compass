@@ -48,7 +48,7 @@ const AboutSection = () => {
             She spent years working closely with leaders, managers, and teams during periods of significant change, including organisational wind-downs and outplacement, supporting professionals through redundancy, role transitions, and high-pressure decision-making. It was this work that revealed a clear pattern: the leaders who navigated complexity best weren't the most skilled or experienced; they were the most self-aware.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-            She holds a Professional Diploma in Individual, Executive, and Business Coaching and is a certified Leadership Circle Profile (LCP) and Collective Leadership Assessment (CLA) Practitioner. She integrates structured assessments with reflective coaching to help clients notice patterns, build self-trust, and align their leadership with their values and long-term direction.
+            She is an ICF-accredited coach, holds a Professional Diploma in Individual, Executive, and Business Coaching and is a certified Leadership Circle Profile (LCP) and Collective Leadership Assessment (CLA) Practitioner. She integrates structured assessments with reflective coaching to help clients notice patterns, build self-trust, and align their leadership with their values and long-term direction.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
             Her approach is calm, structured, and insight-driven. It's about creating space for clarity and insight, enabling leaders to make decisions that align with their values, purpose, and goals. Confidence, productivity, and stronger decisions follow naturally from that shift.
