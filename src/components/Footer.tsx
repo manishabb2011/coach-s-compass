@@ -1,6 +1,8 @@
+import { Instagram, Linkedin } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/vandana-sharma-leads/";
+const INSTAGRAM_URL = "https://www.instagram.com/leadnorth_consulting?igsh=aDV3anE0bnQyeHNr";
 
 const Footer = () => {
   return (
@@ -16,14 +18,26 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <a
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary text-sm transition-colors underline underline-offset-2 shrink-0"
-          >
-            Join Me on LinkedIn
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-secondary"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-secondary"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
