@@ -3,9 +3,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useIsMobile } from "@/hooks/use-mobile";
 
-import cardExecutive from "@/assets/card-executive.jpg";
+// import cardExecutive from "@/assets/card-executive.jpg";
 import cardLeadership from "@/assets/card-leadership.jpg";
-import cardCareer from "@/assets/card-career.jpg";
+// import cardCareer from "@/assets/card-career.jpg";
 import cardTeam from "@/assets/card-team.jpg";
 import cardWellness from "@/assets/card-wellness.jpeg";
 import cardStrategy from "@/assets/card-strategy.jpg";
@@ -29,18 +29,18 @@ const services = [
     description: "For professionals navigating redundancy, career shifts, or major professional change who need structured clarity and direction.",
     tooltip: "Navigate redundancy or career shifts with confidence. This program provides a structured audit of your skills and a strategy to reposition yourself for your next big role.",
   },
-  {
-    image: cardExecutive,
-    title: "Career Coaching",
-    description: "For undergraduate, postgraduate and final-year students seeking clarity in choosing their career direction and next steps.",
-    tooltip: "Get clarity on your career path. We help you move past decision paralysis by mapping your strengths and building a concrete action plan for your next steps.",
-  },  
-  {
-    image: cardCareer,
-    title: "Leadership Support Coaching (On Demand)",
-    description: "For professionals facing urgent team challenges or difficult decisions who need immediate, structured guidance.",
-    tooltip: "Fast-track your way through a leadership crisis or a tough decision. A high-impact, 45-minute session designed to give you immediate clarity and a summary of your best move.",
-  },  
+  // {
+  //   image: cardExecutive,
+  //   title: "Career Coaching",
+  //   description: "For undergraduate, postgraduate and final-year students seeking clarity in choosing their career direction and next steps.",
+  //   tooltip: "Get clarity on your career path. We help you move past decision paralysis by mapping your strengths and building a concrete action plan for your next steps.",
+  // },
+  // {
+  //   image: cardCareer,
+  //   title: "Leadership Support Coaching (On Demand)",
+  //   description: "For professionals facing urgent team challenges or difficult decisions who need immediate, structured guidance.",
+  //   tooltip: "Fast-track your way through a leadership crisis or a tough decision. A high-impact, 45-minute session designed to give you immediate clarity and a summary of your best move.",
+  // },
   {
     image: cardStrategy,
     title: "Collective Leadership Assessment (CLA) for Teams ",

@@ -23,7 +23,7 @@ const Footer = () => {
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-secondary"
+              className="text-[#0A66C2] transition-colors p-2 rounded-full hover:bg-secondary hover:text-[#0A66C2]/90"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
@@ -32,7 +32,7 @@ const Footer = () => {
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-secondary"
+              className="text-[#E4405F] transition-colors p-2 rounded-full hover:bg-secondary hover:text-[#F77737]"
               aria-label="Instagram"
             >
               <Instagram size={20} />
