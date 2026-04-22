@@ -52,7 +52,7 @@ const services = [
 const ServicesCarousel = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
+  const [canScrollRight, setCanScrollRight] = useState(false);
   const [openPopupIndex, setOpenPopupIndex] = useState<number | null>(null);
   const isMobile = useIsMobile();
 
@@ -72,6 +72,12 @@ const ServicesCarousel = () => {
     setCanScrollLeft(scrollLeft > 10);
     setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
   };
+
+  useEffect(() => {
+    checkScroll();
+    window.addEventListener("resize", checkScroll);
+    return () => window.removeEventListener("resize", checkScroll);
+  }, []);
 
   const scroll = (dir: "left" | "right") => {
     if (!scrollRef.current) return;
