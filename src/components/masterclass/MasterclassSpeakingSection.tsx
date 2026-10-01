@@ -1,10 +1,4 @@
-import { useEffect } from "react";
-import {
-  CtaButton,
-  MasterclassPageShell,
-  Section,
-  SectionHeading,
-} from "@/components/masterclass/MasterclassLayout";
+import { Section, SectionHeading, CtaButton } from "@/components/masterclass/MasterclassLayout";
 import speaking from "@/assets/masterclass/cokarma-speaking.jpg";
 import group from "@/assets/masterclass/cokarma-group.jpg";
 import collage from "@/assets/masterclass/cokarma-collage.jpg";
@@ -18,19 +12,15 @@ const topics = [
   { t: "Mindset, Judgment & Intentional Choices", d: "Decision-making and ownership under pressure and change." },
 ];
 
-const MasterclassSpeaking = () => {
-  useEffect(() => {
-    document.title = "Speaking, Podcasts & Press | LeadNorth Consulting";
-  }, []);
-
+const MasterclassSpeakingSection = () => {
   return (
-    <MasterclassPageShell>
-      <Section tone="navy">
+    <>
+      <Section tone="navy" id="speaking">
         <div className="mx-auto max-w-3xl text-center">
           <p className="eyebrow text-primary">Speaking · Panels · Podcasts</p>
-          <h1 className="mt-4 font-display text-4xl font-bold leading-tight md:text-5xl">
+          <h2 className="mt-4 font-display text-4xl font-bold leading-tight md:text-5xl">
             Conversations on leading like a human
-          </h1>
+          </h2>
           <p className="mt-6 text-muted-foreground">
             Vandana speaks at coworking communities, startup houses, colleges and corporate forums — and joins podcast
             conversations on leadership, mindset and careers in an AI-driven world.
@@ -126,8 +116,8 @@ const MasterclassSpeaking = () => {
           <CtaButton className="px-9 py-4 text-base" />
         </div>
       </Section>
-    </MasterclassPageShell>
+    </>
   );
 };
 
-export default MasterclassSpeaking;
+export default MasterclassSpeakingSection;

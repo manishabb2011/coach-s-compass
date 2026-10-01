@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import MasterclassSpeakingSection from "@/components/masterclass/MasterclassSpeakingSection";
 import { Check, Compass, Heart, Lightbulb, Minus, Repeat, Sparkles, Target } from "lucide-react";
 import {
   CtaButton,
@@ -170,6 +171,7 @@ const faqs = [
 
 const Masterclass = () => {
   const [active, setActive] = useState(0);
+  const { hash } = useLocation();
 
   useEffect(() => {
     document.title = "Human Edge Leadership Masterclass | LeadNorth Consulting";
@@ -181,6 +183,14 @@ const Masterclass = () => {
       );
     }
   }, []);
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace("#", "");
+    requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    });
+  }, [hash]);
 
   return (
     <MasterclassPageShell>
@@ -418,12 +428,12 @@ const Masterclass = () => {
               >
                 Main website →
               </Link>
-              <Link
-                to="/masterclass/speaking"
+              <a
+                href="#speaking"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-primary hover:underline"
               >
                 Speaking & press
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -462,11 +472,13 @@ const Masterclass = () => {
           ))}
         </div>
         <div className="mt-8 text-center">
-          <Link to="/masterclass/speaking" className="font-display text-sm font-semibold text-primary hover:underline">
+          <a href="#speaking" className="font-display text-sm font-semibold text-primary hover:underline">
             See speaking, press & podcasts →
-          </Link>
+          </a>
         </div>
       </Section>
+
+      <MasterclassSpeakingSection />
 
       <Section tone="navy" id="framework">
         <div className="flex items-center gap-5">
