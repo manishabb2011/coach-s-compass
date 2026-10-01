@@ -1,5 +1,8 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import JoinCircleSection from "@/components/JoinCircleSection";
 import ServicesCarousel from "@/components/ServicesCarousel";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
@@ -9,14 +12,25 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace("#", "");
+    requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    });
+  }, [hash]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
       <ServicesCarousel />
-      <AboutSection />
       <ValuesSection />
+      <AboutSection />
       <TestimonialsSection />
+      <JoinCircleSection />
       <ContactSection />
       <Footer />
       <WhatsAppButton />

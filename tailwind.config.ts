@@ -52,8 +52,14 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         navy: {
+          DEFAULT: "oklch(0.33 0.062 253)",
+          foreground: "oklch(0.985 0 0)",
           deep: "hsl(var(--navy-deep))",
           medium: "hsl(var(--navy-medium))",
+        },
+        teal: {
+          DEFAULT: "oklch(0.6 0.11 216)",
+          foreground: "oklch(0.99 0 0)",
         },
         gold: {
           light: "hsl(var(--teal-light))",

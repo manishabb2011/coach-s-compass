@@ -13,17 +13,13 @@ const AboutSection = () => {
             <div className="bg-gradient-card rounded-xl p-8 border border-border">
               <h3 className="text-xl font-display font-semibold text-primary mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">
-                We see a world where leaders and organisations operate from purpose, clarity, and conscious choice.
-                Our focus is on leadership reorientation, transforming thinking patterns so leaders can respond intentionally
-                rather than react automatically.
+                To build a generation of leaders who don't pass their unhealthy patterns on to the people they lead.
               </p>
             </div>
             <div className="bg-gradient-card rounded-xl p-8 border border-border">
               <h3 className="text-xl font-display font-semibold text-primary mb-4">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">
-                We support individuals and organisations in creating meaningful shifts in thinking so they can
-                make clearer decisions, lead with purpose, and grow with intention. We don't do generic development.
-                We create lasting, transformational change — from the inside out.
+                Help people lead themselves better, so they can lead others better.
               </p>
             </div>
           </div>
