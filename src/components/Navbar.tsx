@@ -22,7 +22,7 @@ const navItems: NavItem[] = [
 
   { kind: "route", label: "Masterclass", to: "/masterclass" },
 
-  { kind: "section", label: "Services", section: "services" },
+  { kind: "section", label: "Programs", section: "programs" },
 
   { kind: "section", label: "Values", section: "values" },
 

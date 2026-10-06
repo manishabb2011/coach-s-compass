@@ -5,8 +5,8 @@ const testimonials = [
   {
     name: "Mariam Amin",
     role: "Strategy @ Uber, Ex-Bain",
-    quote: `I am really grateful for having been coached by Vandana using the Leadership Circle 
-Assessment. The assessment was much more insightful than I thought and the coaching 
+    quote: `I am really grateful for having been coached by Vandana using a leadership 
+assessment. The assessment was much more insightful than I thought and the coaching 
 session with Vandana exceeded my expectations. Vandana's coaching style is gentle, she asks 
 powerful questions and creates space for reflections and to go deeper. The assessment 
 unlocked many insights but particularly gaps between who I am and my values vs what I project 

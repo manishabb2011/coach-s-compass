@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import JoinCircleSection from "@/components/JoinCircleSection";
-import ServicesCarousel from "@/components/ServicesCarousel";
+import ProgramsSection from "@/components/ProgramsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
 import ValuesSection from "@/components/ValuesSection";
@@ -26,7 +26,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <ServicesCarousel />
+      <ProgramsSection />
       <ValuesSection />
       <AboutSection />
       <TestimonialsSection />

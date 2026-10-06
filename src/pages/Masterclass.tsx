@@ -16,6 +16,7 @@ import cokarmaGroup from "@/assets/masterclass/cokarma-group.jpg";
 import cokarmaCollage from "@/assets/masterclass/cokarma-collage.jpg";
 import alumniEdge from "@/assets/masterclass/alumni-edge-poster.jpg";
 import powerScarf from "@/assets/masterclass/power-scarf.jpg";
+
 const impactShots = [
   {
     src: cokarmaSpeaking,
@@ -145,7 +146,7 @@ const proof = [
   "15 years of HR, talent & organisational experience",
   "Ireland, the UK & India",
   "ICF-certified coach",
-  "Leadership Circle Profile practitioner",
+  "Leadership assessment practitioner",
   "Founder, LeadNorth Consulting",
   "Creator of the Human Edge Leadership framework",
 ];
@@ -398,7 +399,7 @@ const Masterclass = () => {
             <p className="eyebrow text-primary">Your host</p>
             <h2 className="mt-3 text-3xl font-semibold md:text-[2.6rem]">Meet Vandana Sharma</h2>
             <p className="mt-2 text-sm font-semibold text-foreground">
-              Leadership Mindset Coach · ICF-Certified Coach · Leadership Circle Practitioner · Founder, LeadNorth
+              Leadership Mindset Coach · ICF-Certified Coach · Leadership Assessment Practitioner · Founder, LeadNorth
               Consulting
             </p>
             <div className="mt-6 space-y-4 text-muted-foreground">
@@ -429,7 +430,7 @@ const Masterclass = () => {
                 Main website →
               </Link>
               <a
-                href="#speaking"
+                href="#impact"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-primary hover:underline"
               >
                 Speaking & press

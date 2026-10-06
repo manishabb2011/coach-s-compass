@@ -20,7 +20,7 @@ const HeroSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#services"
+            href="#programs"
             className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:bg-gold-glow transition-colors"
           >
             Explore Our Approach
