@@ -5,7 +5,6 @@ import { Check, Compass, Heart, Lightbulb, Minus, Repeat, Sparkles, Target } fro
 import {
   CtaButton,
   MasterclassPageShell,
-  REGISTER_URL,
   Section,
   SectionHeading,
 } from "@/components/masterclass/MasterclassLayout";
@@ -483,23 +482,6 @@ const Masterclass = () => {
           ))}
         </div>
       </Section>
-
-      <section className="bg-gradient-navy border-y border-border">
-        <div className="mx-auto max-w-4xl px-5 py-20 text-center text-foreground md:py-24">
-          <h2 className="text-3xl font-semibold md:text-5xl">
-            Human Edge Leadership AI Can&apos;t Replace
-          </h2>
-          <p className="mt-5 text-muted-foreground">Free live Human Edge Leadership Masterclass · Limited seats</p>
-          <a
-            href={REGISTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-9 inline-flex items-center gap-2 rounded-lg bg-primary px-10 py-4 font-display text-base font-semibold uppercase tracking-wider text-primary-foreground transition-all hover:-translate-y-0.5 hover:bg-gold-glow gold-border-glow"
-          >
-            Reserve My Free Seat →
-          </a>
-        </div>
-      </section>
     </MasterclassPageShell>
   );
 };
