@@ -9,9 +9,7 @@ export const REGISTER_URL = "https://tagmango.app/97c976eaa8";
 
 const nav = [
   { href: "/masterclass#secrets", label: "The 3 Secrets" },
-  { href: "/masterclass#host", label: "Your Host" },
   { href: "/masterclass#impact", label: "Impact" },
-  { href: "/masterclass#speaking", label: "Speaking & Press" },
   { href: "/masterclass#faq", label: "FAQ" },
 ] as const;
 

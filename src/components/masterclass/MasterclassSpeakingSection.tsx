@@ -1,13 +1,6 @@
-import { Section, SectionHeading, CtaButton } from "@/components/masterclass/MasterclassLayout";
+import { Section, SectionHeading } from "@/components/masterclass/MasterclassLayout";
 import powerScarf from "@/assets/masterclass/power-scarf.jpg";
 import alumni from "@/assets/masterclass/alumni-edge-poster.jpg";
-
-const topics = [
-  { t: "Human Leadership In The AI Era", d: "Why the human capabilities matter more as AI becomes more capable." },
-  { t: "The Invisible Leadership Gap", d: "Triggers, patterns and the self-awareness that changes behaviour." },
-  { t: "From Managing Work To Leading People", d: "The shift emerging leaders and managers must make." },
-  { t: "Mindset, Judgment & Intentional Choices", d: "Decision-making and ownership under pressure and change." },
-];
 
 const MasterclassSpeakingSection = () => {
   return (
@@ -31,14 +24,6 @@ const MasterclassSpeakingSection = () => {
                 Vandana joined the Power Scarf Awards as a speaker for Women Entrepreneur Day at Draper Startup House,
                 Hyderabad — supported by TGIC — sharing real stories of leadership, courage and impact.
               </p>
-              <a
-                href="https://www.telanganatribune.com/power-scarf-awards-in-hyderabad-highlights-women-path-creators-and-real-stories/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex rounded-lg border border-border px-5 py-2.5 font-display text-xs font-semibold uppercase tracking-wide text-foreground transition-colors hover:border-primary hover:text-primary"
-              >
-                Read the article →
-              </a>
             </div>
           </article>
 
@@ -62,22 +47,6 @@ const MasterclassSpeakingSection = () => {
               </p>
             </div>
           </article>
-        </div>
-      </Section>
-
-      <Section tone="light">
-        <SectionHeading eyebrow="Signature topics" title="What Vandana speaks about" />
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
-          {topics.map((t) => (
-            <div key={t.t} className="card-soft lift p-7">
-              <div className="h-1 w-10 rounded-full bg-accent-gradient" />
-              <h3 className="mt-5 font-display text-lg font-semibold">{t.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{t.d}</p>
-            </div>
-          ))}
-        </div>
-        <div className="mt-14 text-center">
-          <CtaButton className="px-9 py-4 text-base" />
         </div>
       </Section>
     </>

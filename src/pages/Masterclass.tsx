@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import MasterclassSpeakingSection from "@/components/masterclass/MasterclassSpeakingSection";
 import { Check, Compass, Heart, Lightbulb, Minus, Repeat, Sparkles, Target } from "lucide-react";
 import {
@@ -10,7 +10,6 @@ import {
   SectionHeading,
 } from "@/components/masterclass/MasterclassLayout";
 import banner from "@/assets/masterclass/webinar-banner-new.png";
-import vandana from "@/assets/masterclass/vandana.png";
 import cokarmaSpeaking from "@/assets/masterclass/cokarma-speaking.jpg";
 import cokarmaGroup from "@/assets/masterclass/cokarma-group.jpg";
 import cokarmaCollage from "@/assets/masterclass/cokarma-collage.jpg";
@@ -142,15 +141,6 @@ const walkAway = [
   "Identify your first step toward becoming an intentional human leader.",
 ];
 
-const proof = [
-  "15 years of HR, talent & organisational experience",
-  "Ireland, the UK & India",
-  "ICF-certified coach",
-  "Leadership assessment practitioner",
-  "Founder, LeadNorth Consulting",
-  "Creator of the Human Edge Leadership framework",
-];
-
 const agenda = [
   "Why AI is changing what leadership requires.",
   "Managing work vs leading people.",
@@ -202,14 +192,14 @@ const Masterclass = () => {
         <div className="relative mx-auto max-w-6xl px-5 pt-10 pb-16 md:pt-14 md:pb-20">
           <img
             src={banner}
-            alt="Human Edge Leadership Masterclass — a free live masterclass with Vandana Sharma: Build The Human Edge Leadership AI Can't Replace"
+            alt="Human Edge Leadership Masterclass — a free live masterclass with Vandana Sharma: Human Edge Leadership AI Can't Replace"
             className="w-full rounded-3xl border border-border/15 gold-border-glow"
             loading="eager"
           />
           <div className="mt-10 grid items-center gap-8 md:grid-cols-[1.15fr_0.85fr]">
             <div>
               <h1 className="text-3xl leading-[1.1] font-semibold md:text-5xl">
-                Build The <span className="text-gradient-gold">Human Edge Leadership</span> AI Can't Replace
+                <span className="text-gradient-gold">Human Edge Leadership</span> AI Can&apos;t Replace
               </h1>
               <p className="mt-4 font-display text-lg text-primary">Discover your inner game of leadership.</p>
               <p className="mt-4 max-w-xl text-base text-muted-foreground md:text-lg">
@@ -384,62 +374,6 @@ const Masterclass = () => {
         </div>
       </Section>
 
-      <Section tone="navy" id="host">
-        <div className="grid items-center gap-12 md:grid-cols-[0.85fr_1.15fr]">
-          <div className="relative">
-            <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-3xl bg-accent-gradient opacity-25" />
-            <img
-              src={vandana}
-              alt="Vandana Sharma, Leadership Mindset Coach and Founder of LeadNorth Consulting"
-              className="relative w-full rounded-3xl object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div>
-            <p className="eyebrow text-primary">Your host</p>
-            <h2 className="mt-3 text-3xl font-semibold md:text-[2.6rem]">Meet Vandana Sharma</h2>
-            <p className="mt-2 text-sm font-semibold text-foreground">
-              Leadership Mindset Coach · ICF-Certified Coach · Leadership Assessment Practitioner · Founder, LeadNorth
-              Consulting
-            </p>
-            <div className="mt-6 space-y-4 text-muted-foreground">
-              <p>
-                With 15 years across HR, talent and organisational environments in Ireland, the UK and India, Vandana
-                has worked closely with professionals, managers and leaders through hiring, talent development, career
-                transitions, organisational change and leadership challenges.
-              </p>
-              <p className="font-display text-lg text-foreground">
-                "AI may give you more power. Human leadership determines how you use it."
-              </p>
-            </div>
-            <div className="mt-7 flex flex-wrap gap-3">
-              {proof.map((p) => (
-                <span
-                  key={p}
-                  className="rounded-full border border-border/20 bg-secondary/80 px-4 py-2 text-xs font-semibold text-muted-foreground"
-                >
-                  {p}
-                </span>
-              ))}
-            </div>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link
-                to="/"
-                className="inline-flex items-center gap-2 rounded-full border border-border/25 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary hover:text-foreground"
-              >
-                Main website →
-              </Link>
-              <a
-                href="#impact"
-                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-primary hover:underline"
-              >
-                Speaking & press
-              </a>
-            </div>
-          </div>
-        </div>
-      </Section>
-
       <Section tone="grey" id="impact">
         <SectionHeading
           eyebrow="Real impact"
@@ -464,18 +398,6 @@ const Masterclass = () => {
               </figcaption>
             </figure>
           ))}
-        </div>
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-8 text-center">
-          {["Coaching", "Leadership training", "Keynotes & panels", "Podcasts"].map((t) => (
-            <span key={t} className="font-display text-sm font-semibold tracking-wide text-primary uppercase">
-              {t}
-            </span>
-          ))}
-        </div>
-        <div className="mt-8 text-center">
-          <a href="#speaking" className="font-display text-sm font-semibold text-primary hover:underline">
-            See speaking, press & podcasts →
-          </a>
         </div>
       </Section>
 
@@ -564,7 +486,9 @@ const Masterclass = () => {
 
       <section className="bg-gradient-navy border-y border-border">
         <div className="mx-auto max-w-4xl px-5 py-20 text-center text-foreground md:py-24">
-          <h2 className="text-3xl font-semibold md:text-5xl">Build The Human Edge Leadership AI Can't Replace</h2>
+          <h2 className="text-3xl font-semibold md:text-5xl">
+            Human Edge Leadership AI Can&apos;t Replace
+          </h2>
           <p className="mt-5 text-muted-foreground">Free live Human Edge Leadership Masterclass · Limited seats</p>
           <a
             href={REGISTER_URL}

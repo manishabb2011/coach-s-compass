@@ -19,7 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/masterclass" element={<Masterclass />} />
-          <Route path="/masterclass/speaking" element={<Navigate to="/masterclass#speaking" replace />} />
+          <Route path="/masterclass/speaking" element={<Navigate to="/masterclass#impact" replace />} />
           <Route path="/services" element={<RedirectToPrograms />} />
           <Route path="/leadership-clarity-program" element={<RedirectToPrograms />} />
           <Route path="/leadership-circle-profile" element={<RedirectToPrograms />} />
