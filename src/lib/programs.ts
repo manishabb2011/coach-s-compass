@@ -1,6 +1,6 @@
-import { WHATSAPP_GROUP_URL } from "@/lib/circle";
+import { WHATSAPP_DIRECT_URL, WHATSAPP_GROUP_URL } from "@/lib/circle";
 
-export { WHATSAPP_GROUP_URL };
+export { WHATSAPP_DIRECT_URL, WHATSAPP_GROUP_URL };
 
 export const FREE_MASTERCLASS_REGISTER_URL = "https://tagmango.app/97c976eaa8";
 

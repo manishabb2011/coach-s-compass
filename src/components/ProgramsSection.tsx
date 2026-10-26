@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import {
   FREE_MASTERCLASS_REGISTER_URL,
   SILVER_CHECKOUT_URL,
-  WHATSAPP_GROUP_URL,
+  WHATSAPP_DIRECT_URL,
   journeySteps,
 } from "@/lib/programs";
 
@@ -177,7 +177,7 @@ const ProgramsSection = () => {
                 ))}
               </ul>
               <a
-                href={WHATSAPP_GROUP_URL}
+                href={WHATSAPP_DIRECT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${ctaBase} mt-8`}
