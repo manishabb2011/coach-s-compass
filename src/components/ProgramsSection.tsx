@@ -113,7 +113,7 @@ const ProgramsSection = () => {
               </li>
               <li className="flex gap-2">
                 <span className="text-primary">·</span>
-                All 6 Blueprint bonus courses
+                All 3 Blueprint bonus courses
               </li>
               <li className="flex gap-2">
                 <span className="text-primary">·</span>
